@@ -1,0 +1,32 @@
+{
+	"appId": "app.tailorit.mobile",
+	"appName": "Tailor IT",
+	"webDir": "dist",
+	"backgroundColor": "#f6f3ed",
+	"server": {
+		"androidScheme": "https"
+	},
+	"ios": {
+		"contentInset": "never",
+		"limitsNavigationsToAppBoundDomains": false
+	},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 0,
+			"backgroundColor": "#f6f3ed",
+			"androidScaleType": "CENTER_CROP",
+			"showSpinner": false
+		},
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			]
+		},
+		"Keyboard": {
+			"resize": "body",
+			"resizeOnFullScreen": true
+		}
+	}
+}
