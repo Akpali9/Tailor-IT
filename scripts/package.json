@@ -1,0 +1,1 @@
+{ "name": "tailor-it-scripts", "private": true, "type": "module", "dependencies": { "@supabase/supabase-js": "^2.117.3" } }

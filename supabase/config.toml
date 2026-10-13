@@ -1,0 +1,27 @@
+project_id = "tailor-it"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage"]
+
+[auth]
+site_url = "tailorit://auth/callback"
+additional_redirect_urls = ["tailorit://auth/callback", "tailorit://auth/reset"]
+enable_signup = true
+enable_confirmations = true
+minimum_password_length = 8
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+# Public endpoints: authenticity is enforced inside the function (provider signature / shared secret).
+[functions.payments-webhook]
+verify_jwt = false
+[functions.pay-return]
+verify_jwt = false
+[functions.push-dispatch]
+verify_jwt = false
+[functions.cleanup-photos]
+verify_jwt = false
