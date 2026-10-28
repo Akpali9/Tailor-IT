@@ -1,6 +1,5 @@
 # Tailor IT
 
-
 Made-to-measure fashion, marketplace and AI fitting room — **Android + iOS** app (Capacitor + React), a **Supabase** backend, and a **private admin console**.
 
 ```
